@@ -17,4 +17,4 @@ The page will reload if you make edits.<br />
 
 ### Deployment
 
-The site has been deployed at https://awesome-aryabhata-3122cb.netlify.app/home
+The site has been deployed at https://awesome-aryabhata-3122cb.netlify.app/
