@@ -26,11 +26,11 @@ function App() {
   return (
     <Provider store={Store}>
       <Router>
-        {shown && renderModal()}
         <Navbar/>
         <Switch>
           <Route exact path="/home" component={HomeContainer}/>
           <Route exact path="/favorites" component={FavContainer}/>
+          {shown && <Route exact path="/" component={renderModal}/>}
           <Route component={NotFound}/>
         </Switch>
       </Router> 
