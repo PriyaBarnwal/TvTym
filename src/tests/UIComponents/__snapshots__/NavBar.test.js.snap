@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render navbar correctly 1`] = `
+<nav
+  className="nav-container"
+>
+  <div
+    className="nav-wrapper"
+  >
+    <ForwardRef
+      className="brand-logo left"
+      to="/home"
+    >
+      <img
+        alt="logo"
+        height="70"
+        src="logo1.ZzdP9AdvlCYog+Quq6R6b0gN4FcLgRULcMU+jDIqD99LxUc6unyAOA=="
+      />
+    </ForwardRef>
+    <ul
+      className="right"
+    >
+      <li>
+        <ForwardRef
+          className="nav-link"
+          to="/home"
+        >
+          <i
+            className="material-icons hide-on-large-only"
+          >
+            home
+          </i>
+          <p
+            className="hide-on-med-and-down"
+          >
+            Home
+          </p>
+        </ForwardRef>
+      </li>
+      <li>
+        <ForwardRef
+          className="nav-link"
+          to="/favorites"
+        >
+          <i
+            className="material-icons hide-on-large-only"
+          >
+            favorite
+          </i>
+          <p
+            className="hide-on-med-and-down"
+          >
+            Favorites
+          </p>
+        </ForwardRef>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

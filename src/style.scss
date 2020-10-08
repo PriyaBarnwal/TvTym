@@ -1,0 +1,169 @@
+$secondary-color: #33395c;
+
+.nav-container {
+  background-color: $secondary-color;
+  opacity: 0.8;
+  color: 'white';
+
+  p {
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
+}
+
+.card-cont {
+  width: 300px;
+  margin: 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-bg {
+  background-color: $secondary-color !important;
+  a {
+  text-transform: none !important;
+    font-weight: 700;
+    font-size: 15px
+  }
+}
+
+.card-action {
+  padding-top: 5px !important;
+  height: 70px;
+
+  p {
+  color: aqua;
+  font-size: 12px;
+  }
+}
+
+.card-reveal {
+  opacity: 0.9;
+  color: white;
+  overflow-y: 'scroll'
+}
+
+.fav-icon {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+}
+.close-icon {
+  color: rgb(131, 121, 121);
+}
+
+.badge-card {
+  position: absolute;
+  right: 2%;
+  bottom: 40%;
+  align-items: center;
+  display: flex;
+  color: rgb(233, 193, 61) !important;
+}
+
+.loading-container {
+  height: 100%;
+  position: fixed;
+  top:50%;
+}
+
+.fav-container {
+  min-height: 80vh;
+  font-family: "Times New Roman";
+  text-align: center;
+  color: white;
+
+  header {
+    display: flex;
+    margin: 20px 0;
+    padding-right: 50px;
+    justify-content: center;
+  }
+
+  .collection {
+    min-width: 400px;
+    max-width: 700px;
+    margin: auto;
+    border-color: grey;
+
+    .collection-item {
+      display: flex;
+      align-items: center;
+      background-color: rgb(12, 11, 11);
+      border-color: grey;
+
+      .meta-info {
+        margin-left: 20px;
+        align-self: flex-start;
+        a {
+        color: darkcyan;
+        }
+        p {
+          margin: 2px 5px;
+          color: white;
+        }
+      }
+
+      .trash {
+        color: grey;
+        align-self: flex-start;
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.favorite-items-appear {
+  opacity: 0.01;
+}
+
+.favorite-items-appear.favorite-items-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.favorite-items-leave {
+  opacity: 1;
+}
+
+.favorite-items-leave.favorite-items-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-image: url('./assets/tv.jpg');
+  background-size: cover; 
+}
+
+.inner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.9);
+}
+.btn-large, .btn-large:hover, .btn-large:active {
+  background-color: $secondary-color;
+  margin: 20px;
+  width: 220px;
+}
+.toasts-container {
+  top: 50px;
+  overflow: visible !important;
+}
