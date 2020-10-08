@@ -6,7 +6,7 @@ export const getShows = (page=0) => async(dispatch) => {
       type: SET_LOADING
     })
     
-    let response = await fetch(`http://api.tvmaze.com/shows?page=${page}`)
+    let response = await fetch(`https://api.tvmaze.com/shows?page=${page}`)
     let shows = await response.json()
 
     dispatch({
