@@ -13,37 +13,6 @@ exports[`should render App correctly 1`] = `
   }
 >
   <BrowserRouter>
-    <PortalContainer
-      handleClose={[Function]}
-    >
-      <img
-        alt="logo"
-        height="150"
-        src="logo1.ZzdP9AdvlCYog+Quq6R6b0gN4FcLgRULcMU+jDIqD99LxUc6unyAOA=="
-      />
-      <div>
-        <ForwardRef
-          className="btn-large"
-          to="/home"
-        >
-          <div
-            onClick={[Function]}
-          >
-            Go to Home Page
-          </div>
-        </ForwardRef>
-        <ForwardRef
-          className="btn-large"
-          to="/favorites"
-        >
-          <div
-            onClick={[Function]}
-          >
-            See your Favorites
-          </div>
-        </ForwardRef>
-      </div>
-    </PortalContainer>
     <Navbar />
     <Switch>
       <Route
@@ -71,6 +40,11 @@ exports[`should render App correctly 1`] = `
         }
         exact={true}
         path="/favorites"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
       />
       <Route
         component={[Function]}
